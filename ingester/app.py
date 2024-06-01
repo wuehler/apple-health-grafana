@@ -180,7 +180,7 @@ if __name__ == "__main__":
         exit(1)
     print("Export file unzipped!")
 
-    client = InfluxDBClient("influx", 8086, database="health")
+    client = InfluxDBClient("192.168.0.18", 8086, database="health")
 
     while True:
         try:
